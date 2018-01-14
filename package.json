@@ -1,0 +1,28 @@
+{
+  "name": "webextension_local_filesystem_links-native-host-binaries",
+  "version": "0.2.1",
+  "description": "Native messaging host app for local filesystem links extension",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "checksum": "^0.1.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "addTag": "$(echo $(npm version patch) | cut -c 2-)",
+    "check:checksums": "npm run create:md5 && npm run create:sha1 && npm run combine:checks",
+    "create:md5": "(echo '# MD5 checksums\n'; checksum -a md5 ./linux/* ./win32/*) > md5.md",
+    "create:sha1": "(echo '# SHA1 checksums\n'; checksum -a sha1 ./linux/* ./win32/*) > sha1.md",
+    "combine:checks": "(cat md5.md; echo; cat sha1.md) > checksums.md"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AWolf81/webextension_local_filesystem_links-native-host-binaries.git"
+  },
+  "author": "AWolf81",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/AWolf81/webextension_local_filesystem_links-native-host-binaries/issues"
+  },
+  "homepage": "https://github.com/AWolf81/webextension_local_filesystem_links-native-host-binaries#readme"
+}
