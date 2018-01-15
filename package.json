@@ -1,6 +1,6 @@
 {
   "name": "webextension_local_filesystem_links-native-host-binaries",
-  "version": "0.2.1",
+  "version": "0.2.0",
   "description": "Native messaging host app for local filesystem links extension",
   "main": "index.js",
   "dependencies": {},
@@ -9,7 +9,9 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "addTag": "$(echo $(npm version patch) | cut -c 2-)",
+    "version": "printf \"%s\" $(node -p -e \"require('./package.json').version\")",
+    "message": "printf \"Release version %s\n%s\" \"$(npm run version)\" \"$(cat checksums.md)\"",
+    "tag": "git tag \"$(npm run version)\" -m \"$(npm run message)\"",
     "check:checksums": "npm run create:md5 && npm run create:sha1 && npm run combine:checks",
     "create:md5": "(echo '# MD5 checksums\n'; checksum -a md5 ./linux/* ./win32/*) > md5.md",
     "create:sha1": "(echo '# SHA1 checksums\n'; checksum -a sha1 ./linux/* ./win32/*) > sha1.md",
