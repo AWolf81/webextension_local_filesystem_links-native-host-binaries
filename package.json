@@ -1,6 +1,6 @@
 {
   "name": "webextension_local_filesystem_links-native-host-binaries",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "Native messaging host app for local filesystem links extension",
   "main": "index.js",
   "dependencies": {},
