@@ -5,5 +5,6 @@ Native app used for [https://github.com/feinstaub/webextension_local_filesystem_
 
 Currently supported operating systems:
 - Windows (tested & created setup with Windows 10 (64bit) & Python 2.7.14 (32bit))
-- Ubuntu (test open)
+- Ubuntu (tested)
 - Open Suse (tested & created linux package with OpenSUSE Tumbleweed with Plasma (64bit) & Python 2.7.14 (64bit))
+- MacOs 10.12 Sierra (64bit) (tested)

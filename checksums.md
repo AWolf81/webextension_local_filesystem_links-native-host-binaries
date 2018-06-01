@@ -1,11 +1,11 @@
-# MD5 checksums
-
+# MD5
 3d8b89c41b4bac7954fb8fb234b91470  ./linux/native-app-bundle-linux-open-suse.tar
-fb1217585360dbdc052506191c10a303  ./linux/native-app-bundle-linux.tar
-08a49447f951c22fcef85c640b13ea95  ./win32/native-app-setup.exe
+23b017a756fbadc893acdf580dd82b1a  ./linux/native-app-bundle-linux.tar
+490e35f54d5360104708fa5d4d344d20  ./win32/native-app-setup.exe
+ddf2ca0d7cbf0ef868a8512df4609842  ./mac/native-app-bundle-mac.tar
 
-# SHA1 checksums
-
-92222f5dae60458e80929aaecc889e6afe945e72  ./linux/native-app-bundle-linux-open-suse.tar
-dc6f0442834897d5c133f5ac9aeba3f651e5f068  ./linux/native-app-bundle-linux.tar
-6499d8e9b85500c2d23ba7b9fc2f88c8c7166fe9  ./win32/native-app-setup.exe
+# SHA256
+9eb56d29f3effdf0c2d1363bf71ef69b55ae2178a10f3d9b438bbd8da122a257  ./linux/native-app-bundle-linux-open-suse.tar
+4ee26f2f49daa86244e8e86f6c3f32a69c51156933976f95996a0638a9bd3287  ./linux/native-app-bundle-linux.tar
+44c36f2be56e8d115703abf2110a2694758f8b26d88c1b8fe7f550f67199df74  ./win32/native-app-setup.exe
+7ce59933bce7aeb1d2da5027c7136b8ec18a8ce3e812ccdf519d46ec0fc7c855  ./mac/native-app-bundle-mac.tar
